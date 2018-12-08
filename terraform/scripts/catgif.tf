@@ -6,7 +6,7 @@ backend "azurerm" {}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    subscription_id = "91b91d85-30a9-4de4-bff8-02b880475410"
+    subscription_id = "eeba8728-991f-494d-99e3-c10cfa2fbf74"
     tenant_id       = "a081ff79-318c-45ec-95f3-38ebc2801472"
 }
 
@@ -153,7 +153,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     os_profile {
         computer_name  = "myvm"
         admin_username = "azureuser"
-        admin_password = "password"
+        admin_password = "Terraform18!"
     }
 
     os_profile_linux_config {
@@ -179,7 +179,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
       connection {
     type = "ssh"
     user = "azureuser"
-    password = "password"
+    password = "Terraform18!"
   }
   }
 
@@ -191,7 +191,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
       connection {
     type = "ssh"
     user = "azureuser"
-    password = "password"
+    password = "Terraform18!"
   }
   }
     
