@@ -153,7 +153,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     os_profile {
         computer_name  = "myvm"
         admin_username = "azureuser"
-        admin_password = "Terraform18!"
+        admin_password = "password"
     }
 
     os_profile_linux_config {
@@ -179,7 +179,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
       connection {
     type = "ssh"
     user = "azureuser"
-    password = "Terraform18!"
+    password = "password"
   }
   }
 
